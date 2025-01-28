@@ -1,0 +1,587 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;    
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior:smooth;
+}
+
+html, body {
+    height: 100%;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 50px;
+    margin: auto;
+}
+
+/*Body Treatments*/
+section{
+    padding: 100px 0 100px 0;
+}
+
+.body-treatments{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body-treatments .title{
+    position: relative;
+   
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color: turquoise;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.body-treatments .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 250px;
+    height: 3px;
+    background: turquoise;
+    transform: translateX(-50%);
+}
+
+
+.body-treatments .title::after{
+    content: "beauty treatments";
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    font-size: 20px;
+    color: turquoise;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+.body-treatments .bodyT-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body-treatments .bodyT-content .left {
+    width: 40%;
+}
+
+.body-treatments .bodyT-content .left img{
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.body-treatments .bodyT-content .right {
+    width: 40%;
+}
+
+.body-treatments .bodyT-content .right .text{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: turquoise;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.body-treatments .bodyT-content .right p{
+    color: turquoise;
+    text-align: justify;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.body-treatments .bodyT-content .right p a{
+    background: turquoise;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.body-treatments .bodyT-content .right p a:hover{
+    opacity: 1;
+}
+
+.body-treatments .bodyT-types{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body-treatments .bodyT-types p1{
+    font-size: 20px;
+    font-weight: 300;
+    background: white;
+    color: white;
+    background: turquoise;
+    text-align: justify;
+    margin-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.body-treatments .bodyT-types p2{
+    font-size: 20px;
+    font-weight: 300;
+    background: white;
+    color: turquoise;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.body-treatments .bodyT-types p{
+    background: white;
+    color: turquoise;
+    text-align: justify;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.body-treatments .bodyT-types p:hover{
+    background: turquoise;
+    color: white;
+}
+
+
+
+/*NavBar*/
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: whitesmoke;
+    position: fixed;   
+    z-index: 999;  
+    margin: 0;     
+}
+
+nav span a{    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: turquoise;
+    background-size: 100%;
+    line-height: 60px;
+    float: left;  
+    font-size: 24px;
+    padding: 14px 14px;
+    padding-left: 40px;
+    text-decoration: none;
+}
+
+nav span a:hover {
+    background-color: rgb(228, 224, 224);
+    color: rgb(35, 180, 166);
+    transition: all 0.3s ease;
+}
+
+nav ul {
+    float: left; 
+}
+
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    background: whitesmoke;
+}
+
+nav ul li a {
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: turquoise;
+    font-size: 14px;
+    padding: 20px 14px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgb(228, 224, 224);
+    color: rgb(35, 180, 166);
+    transition: all 0.3s ease;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 0px 0px 6px 6px;
+}
+
+
+nav ul li:hover ul{
+    display: block;
+}
+
+nav ul li ul li {
+    width: 120px;
+    border-radius: 4px;
+}
+
+nav ul li ul li a{
+    padding: 10px 14px;
+}
+
+nav ul li ul li a:hover{
+    background-color: rgb(228, 224, 224);
+}
+
+.icon, input{
+    display: none;
+}
+
+
+/*Footer*/
+footer {
+    position: fixed;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: black;
+    
+}
+
+.footer_container {
+    display: flex;
+    align-content: center;    
+}
+
+.footer_container .section {
+    flex-basis: 50%;
+    padding: 10px 20px;   
+}
+
+.section h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+.section .content{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.section .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.section .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: turquoise;
+    top: -10px;
+}
+
+.section .content p{
+    color: white;
+    text-align: justify;
+}
+
+
+/*About Us section*/
+
+.about_us .content .social {
+    margin: 20px 0 0 0;
+}
+
+.about_us .content .social a{
+    padding: 0 2px ;
+}
+
+.about_us .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #525151;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.about_us .content .social a :hover{
+    background: turquoise;
+}
+
+
+/*Contact section*/
+.address .content .fas {
+    font-size: 1.2rem;
+    background: #525151;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 40%;  
+    transition: 0.5s;
+    cursor: pointer; 
+}
+
+
+.address .content :hover .fas {
+    background: turquoise;
+}
+
+.address .content .text{
+    font-size: 1.02rem;
+    font-weight: 400;
+    padding-left: 10px;
+    color: white;
+}
+
+.address .content .phone{
+    margin: 10px 0;
+}
+
+
+/*Programme*/
+.programme .content{
+    
+    align-items: center;
+}
+
+.programme .content .far{
+    font-size: 1rem;
+    background: #525151;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 30%;  
+    transition: 0.5s;
+    cursor: pointer; 
+    margin-top: 3px;
+}
+
+.programme .content .fas{
+    font-size: 1rem;
+    background: #525151;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 30%;  
+    transition: 0.5s;
+    cursor: pointer; 
+    margin-top: 3px;    
+}
+
+.programme .content :hover .far{
+    background: turquoise;
+}
+
+.programme .content :hover .fas{
+    background: turquoise;
+}
+
+.programme .content .text{
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 10px;
+    color: white;
+}
+
+/*Bottom*/
+.bottom center{
+    padding: 5px;
+    font-size: 0.7rem;
+    background: #525151;
+}
+
+.bottom center span{
+    color: white;
+}
+
+
+/*Small screen*/
+
+@media screen and (max-width: 1160px){
+    .max-width{
+        max-width: 800px;
+    }
+
+    .body-treatments .bodyT-content .column{
+        width: 100%;
+    }
+
+    .body-treatments .bodyT-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .body-treatments .bodyT-content .right{
+        flex: 100%;
+    }
+
+
+    .body-treatments .bodyT-content .left img{
+        height: 300px;
+        width: 500px;
+        
+    }
+
+
+    /*Navbar*/
+    nav{
+        opacity: 1;
+        z-index: 999;
+        text-align:left;         
+    }
+    
+    nav ul {
+        margin-left: 0px;
+        float: left;     
+    }
+
+    nav span a {
+        padding-left: 30px;
+        width: 100%;
+        
+    }
+
+    nav ul li, nav ul li  ul li {
+        display: block;
+        width: 100%;   
+    }
+
+    nav ul ul li{
+        border-bottom: 0px;
+    }
+
+    nav ul li ul li a{
+        display: block;
+        color: turquoise;
+        font-size: 10px;
+        padding: 0 10px;
+        margin-left: 10px;
+        line-height: 30px;
+        cursor: pointer;
+        padding-left: 20px;
+    }
+
+    nav ul li ul{
+        top: 30px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .icon{
+        display: block;
+        color: turquoise;
+        position: absolute;
+        right: 40px;
+        line-height: 50px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    nav ul li a:hover {
+        color: teal;
+    }
+    nav ul li ul :hover a{
+        color: teal;
+    }
+
+    nav ul li ul + a, ul{
+        display: none;
+    }
+
+   [id^=btn]:checked + ul {
+        display: block;
+        background: whitesmoke;
+    }
+
+    
+
+    /*Footer*/
+    footer{
+        position: fixed;
+        position: relative;    
+        bottom: 0px; 
+        z-index: 1;  
+    }
+
+    .section h2{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    .about_us .content .social a span{
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        font-size: 10px;      
+    }
+
+    .address .content .fas {
+        font-size: 0.8rem;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        
+    }
+
+    .programme .content .far{
+        font-size: 0.8rem;
+        background: #525151;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+    }
+    
+    .programme .content .fas{
+        font-size: 0.8rem;
+        background: #525151;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;  
+    }
+
+    .footer_container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footer_container .section{
+        margin: 0;
+    }
+    
+}
+
+
+
+
+
+
+
